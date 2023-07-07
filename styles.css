@@ -1,0 +1,554 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    letter-spacing: normal;
+    min-width: 320px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #b9b4c8; 
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #b8afd5; 
+}
+
+
+b,
+strong,
+.bold {
+    font-weight: bold !important;
+}
+
+.b900 {
+    font-weight: 900 !important;
+}
+
+.b800 {
+    font-weight: 800 !important;
+}
+
+.stretch {
+    transition: letter-spacing 0.5s;
+}
+.stretch:hover {
+    background: linear-gradient(to right, #7649E8 0%, #C512EB 100%);
+    color: #fff !important;
+    letter-spacing: 0.3rem;
+}
+
+.greytext {
+    color: #777;
+}
+
+.font12 {
+    font-size: 0.75rem;
+}
+
+.font14 {
+    font-size: 0.875rem;
+}
+
+.font16 {
+    font-size: 1rem;
+}
+
+.font18 {
+    font-size: 1.125rem;
+}
+
+.font20 {
+    font-size: 1.25rem;
+}
+
+.font24 {
+    font-size: 1.5rem;
+}
+
+.font30 {
+    font-size: 1.875rem;
+}
+
+.font32 {
+    font-size: 2rem;
+}
+
+.font36 {
+    font-size: 2.25rem;
+}
+
+.font56 {
+    font-size: 3.5rem;
+}
+
+.mt30 {
+    margin-top: 1.875rem;
+}
+
+.mt70 {
+    margin-top: 4.375rem;
+}
+
+.mb30 {
+    margin-bottom: 1.875rem;
+}
+
+.mt24 {
+    margin-top: 1.5rem;
+}
+
+.ml16 {
+    margin-left: 1rem;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, #210E35 0%, #190426 100%);
+    color: #fff;
+    height: 100%;
+}
+
+.home h1 {
+    font-weight: 800;
+    text-align: left;
+}
+
+.violet-light {
+    color: #7649E8 !important;
+}
+
+.pulsing-profile {
+    width: 6rem;
+    height: 6rem;
+    background: url("assets/profile-image-x.jpg") no-repeat center center;
+    background-size: cover;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    margin-right: 2.5rem;
+}
+.pulsing-profile:after,
+.pulsing-profile:before {
+    content: "";
+    position: absolute;
+    left: 0rem;
+    top: 0rem;
+    right: 0rem;
+    bottom: 0rem;
+    border: 2px solid #7649E8;
+    border-radius: 50%;
+    animation: pulse 1.5s linear infinite;
+}
+.pulsing-profile:after {
+    animation-delay: .5s;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(.5);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    0% {
+        transform: scale(1.4);
+        opacity: 0;
+    }
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 25px;
+    border: 1px solid #7649E8;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    opacity: 0.5;
+}
+.scroll-down:hover {
+    opacity: 1;
+    border: 2px solid #7649E8 !important;
+    bottom: 20px !important;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    cursor: pointer;
+    background: none !important;
+}
+
+.scroll-down-icon {
+    width: 30px;
+    color: #7649E8;
+    margin-top: 11px;
+}
+
+
+.aboutme {
+    padding: 6rem 4rem 6rem 4rem;
+}
+
+.section-title {
+    font-weight: 800;
+    text-align: left;
+    font-size: 2.8rem;
+    margin: 0 0 2rem 1rem;
+}
+
+.aboutme-section {
+    text-align: left;
+    padding: 2rem;
+}
+
+#education {
+    margin-bottom: 3rem;
+}
+
+.sq-timeline {
+    display: block;
+    position: relative;
+    margin-left: 0.625rem;
+}
+.sq-timeline ul.tl {
+    margin: 1rem 1rem 0 1rem;
+    padding: 0;
+    display: inline-block;
+}
+.sq-timeline ul.tl li {
+    list-style: none;
+    margin: auto;
+    border-left: 3px solid #eee;
+    padding: 0 0 1rem 1.5rem;
+    position: relative;
+}
+.sq-timeline ul.tl li:last-child {
+    margin-left: 3px;
+    border-left: 0;
+    padding-bottom: 0;
+}
+.sq-timeline ul.tl li::before {
+    position: absolute;
+    left: -5.5px;
+    content: " ";
+    border-radius: 500%;
+    background: #555;
+    height: 0.5rem;
+    width: 0.5rem;
+    transition: all 500ms ease-in-out;
+}
+.portlink a {
+    color: #7649E8;
+    text-decoration: none;
+    transition: letter-spacing 0.5s;
+}
+
+.portlink a:hover {
+    background: linear-gradient(to right, #7649E8 0%, #C512EB 100%);
+    color: #fff;
+    letter-spacing: 0.125rem;
+}
+
+.portfolio {
+    padding: 6rem 4rem 6rem 4rem;
+    background-image: linear-gradient(to right, #7649E8 0%, #C512EB 100%);
+    color: #fff;
+}
+.h-separator {
+    padding: 0.75rem 0;
+}
+.p-gallery {
+    display: flex;
+    margin: 4rem 1rem 0 1rem;
+}
+.p-gallery .p-img-container {
+    overflow: hidden;
+}
+.p-gallery .p-col-text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    text-decoration: wavy;
+    padding: 1rem 5rem;
+}
+.p-gallery .p-img-container img {
+    transition: 0.3s;
+}
+.p-gallery .p-img-container img:hover {
+   transform: scale(1.03);
+   cursor: pointer;
+   opacity: 0.8;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgb(0,0,0, 0.7);
+}
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 100%;
+}
+.modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+.close {
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 20%;
+    padding-top: 5px;
+}
+.close:hover,
+.close:focus {
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 20%;
+    background: #f7f7f7;
+}
+.p-img-modal {
+    overflow: hidden;
+}
+.p-img-modal .p-modal-title {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.p-img-modal .p-modal-title .p-title {
+    font-size: 18px;
+    text-align: left;
+    font-weight: 800;
+}
+.p-download-close {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    margin-right: 5px;
+}
+.p-img-viewer {
+    max-height: calc(100vh - 74px);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.p-title-span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+}
+.p-chip {
+    padding: 2px 5px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    background-image: linear-gradient(to right, #7649E8 0%, #C512EB 100%);
+    border-radius: 5px;
+}
+.p-title-image {
+    width: 40px;
+}
+
+.p-skills {
+    margin-top: 1.5rem;
+    padding: 1rem;
+}
+.p-skill-set {
+    margin-top: 3rem;
+}
+.p-skill-label {
+    display: flex;
+    align-content: flex-start;
+    text-align: left;
+    font-weight: 800;
+}
+.p-skill-list {
+    display: block;
+    text-align: left;
+}
+.p-skill {
+    display: inline-block;
+    padding: 4px 8px;
+    margin: 0 0.6rem 0.825rem 0 ;
+    color: #333;
+    font-weight: 600;
+    border: 1px solid #333;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+.p-skill:hover {
+    color: #fff;
+    border: 1px solid#7649E8;
+    background-image: linear-gradient(to right, #7649E8 0%, #C512EB 100%);
+    cursor: grab;
+}
+
+.contactme {
+    padding: 6rem 4rem 6rem 4rem;
+}
+.contactbox {
+    padding: 0 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+}
+.contactchip {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    color: #333;
+    font-size: 18px;
+    transition: 0.2s all ease-in-out;
+}
+.contactchip:hover{
+    border: 1px solid #7649E8;
+    color: #7649E8;
+}
+.contactdetails {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    padding: 0 !important;
+}
+.contactlinks {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.contactlinks a {
+    text-decoration: none;
+    color: #333;
+}
+.contactinfo {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.contactinfo .icon {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Media Queries */
+@media (min-width: 1200px) {
+
+}
+@media only screen and (max-width: 767px) {
+    .profile-image {
+        margin-bottom: 1.5rem
+    }
+    .profile {
+        margin: 2rem;
+    }
+    .aboutme, .portfolio {
+        padding: 4rem 0.8rem;
+    }
+    #experience {
+        margin-top: -4rem;
+    }
+    .aboutme-section {
+        padding: 2rem 2rem 0 2rem;
+    }
+    .modal-content {
+        width: 95%;
+        margin-top: 50%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #education, #certifications {
+        margin-bottom: 3rem !important;
+    }
+    .p-skill-list {
+        margin-top: 1rem;;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .profile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .profile h1 {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    
+}
+
+@media only screen and (min-width: 1200px) {
+
+}
