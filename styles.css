@@ -447,10 +447,6 @@ strong,
 }
 .contactbox {
     padding: 0 1rem 1rem 1rem;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    justify-content: space-between;
 }
 .contactchip {
     display: flex;
@@ -474,14 +470,13 @@ strong,
     flex-direction: row;
     gap: 20px;
     align-items: center;
-    padding: 0 !important;
 }
 .contactlinks {
     display: flex;
     flex-direction: row;
     gap: 15px;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 }
 .contactlinks a {
     text-decoration: none;
@@ -510,7 +505,7 @@ strong,
     .profile {
         margin: 2rem;
     }
-    .aboutme, .portfolio {
+    .aboutme, .portfolio, .contactme {
         padding: 4rem 0.8rem;
     }
     #experience {
@@ -525,12 +520,25 @@ strong,
     }
 }
 
+@media only screen and (max-width: 992px) {
+    .contactdetails {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     #education, #certifications {
         margin-bottom: 3rem !important;
     }
     .p-skill-list {
         margin-top: 1rem;;
+    }
+    .contactlinks {
+        margin-top: 2rem;
+        justify-content: flex-start;
     }
 }
 
